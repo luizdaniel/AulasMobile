@@ -62,7 +62,9 @@ public class Livraria {
         List<Livro> livros = colecao.getListaColecao();
         for (int i = 0; i < livros.size(); i++) {
             EfetuarVenda(livros.get(i).getCodigo());
-            System.out.println("Coleção: " + colecao.getDescricao() + " venda do livro: " + livros.get(i).getCodigo() + " - estoque: " +  livros.get(i).getQuantidade());
+            if(livros.get(i).getQuantidade() >= 1){
+                System.out.println("Coleção: " + colecao.getDescricao() + " venda do livro: " + livros.get(i).getCodigo() + " - estoque: " +  livros.get(i).getQuantidade());
+            }
         }
 
     }

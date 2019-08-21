@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Principal {
     public static void main(String[] args) {
-        Livro livro1 = new Livro(1,"tit1", "aut1", 2019, 1,1,17);
+        Livro livro1 = new Livro(1,"tit1", "aut1", 2019, 1,0,17);
         Livro livro2 = new Livro(2,"tit2", "aut2", 2019, 1,4,15);
         Livro livro3 = new Livro(3,"tit3", "aut3", 2019, 1,5,13);
         Livro livro4 = new Livro(4,"tit4", "aut4", 2019, 1,8,2);
@@ -48,7 +48,5 @@ public class Principal {
         Colecao box3 = new Colecao(colecao3, 12, 90.0,"Esse é um box 3.");
 
         livraria.EfetuarVenda(box2);
-
-
     }
 }
