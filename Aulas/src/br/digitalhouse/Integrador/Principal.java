@@ -11,8 +11,6 @@ public class Principal {
         Livro livro4 = new Livro(4,"tit4", "aut4", 2019, 1,8,2);
         Livro livro5 = new Livro(5,"tit5", "aut5", 2019, 1,9,1);
 
-
-
         Livraria livraria = new Livraria();
         livraria.CadastrarLivro(livro1);
         livraria.CadastrarLivro(livro2);
@@ -21,22 +19,35 @@ public class Principal {
         livraria.CadastrarLivro(livro5);
 
         //um livro
-        livraria.ConsultarLivro(5);
+        //livraria.ConsultarLivro(5);
 
         //varios livros
         List<Integer> codigos = new ArrayList<>();
         codigos.add(2);
         codigos.add(4);
-        livraria.ConsultarLivro(codigos);
+        //livraria.ConsultarLivro(codigos);
 
-        livraria.EfetuarVenda(2);
-        livraria.EfetuarVenda(2);
-        livraria.EfetuarVenda(77);
+//        livraria.EfetuarVenda(2);
+//        livraria.EfetuarVenda(2);
+//        livraria.EfetuarVenda(77);
 
-        List<Livro> colecao = new ArrayList<>();
-        colecao.add(livro4);
-        colecao.add(livro1);
-        Colecao box1 = new Colecao(colecao, 12, 90.0,"Esse é um box.");
+        //Desafio
+        List<Livro> colecao1 = new ArrayList<>();
+        colecao1.add(livro1);
+        colecao1.add(livro2);
+        Colecao box1 = new Colecao(colecao1, 12, 90.0,"Esse é um box 1.");
+
+        List<Livro> colecao2 = new ArrayList<>();
+        colecao2.add(livro3);
+        colecao2.add(livro4);
+        Colecao box2 = new Colecao(colecao2, 12, 90.0,"Esse é um box 2.");
+
+        List<Livro> colecao3 = new ArrayList<>();
+        colecao3.add(livro5);
+        colecao3.add(livro1);
+        Colecao box3 = new Colecao(colecao3, 12, 90.0,"Esse é um box 3.");
+
+        livraria.EfetuarVenda(box2);
 
 
     }
