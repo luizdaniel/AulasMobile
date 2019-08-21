@@ -59,4 +59,9 @@ public class Livraria {
 
     }
 
+    public void EfetuarVenda(List<Colecao> colecao){
+
+
+    }
+
 }

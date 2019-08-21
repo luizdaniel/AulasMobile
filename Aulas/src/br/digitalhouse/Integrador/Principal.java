@@ -11,6 +11,8 @@ public class Principal {
         Livro livro4 = new Livro(4,"tit4", "aut4", 2019, 1,8,2);
         Livro livro5 = new Livro(5,"tit5", "aut5", 2019, 1,9,1);
 
+
+
         Livraria livraria = new Livraria();
         livraria.CadastrarLivro(livro1);
         livraria.CadastrarLivro(livro2);
@@ -19,21 +21,22 @@ public class Principal {
         livraria.CadastrarLivro(livro5);
 
         //um livro
-        //livraria.ConsultarLivro(5);
+        livraria.ConsultarLivro(5);
 
         //varios livros
         List<Integer> codigos = new ArrayList<>();
         codigos.add(2);
         codigos.add(4);
-        //livraria.ConsultarLivro(codigos);
+        livraria.ConsultarLivro(codigos);
 
-//        livraria.EfetuarVenda(2);
-//        livraria.EfetuarVenda(2);
-//        livraria.EfetuarVenda(2);
-//        livraria.EfetuarVenda(2);
+        livraria.EfetuarVenda(2);
+        livraria.EfetuarVenda(2);
         livraria.EfetuarVenda(77);
 
-
+        List<Livro> colecao = new ArrayList<>();
+        colecao.add(livro4);
+        colecao.add(livro1);
+        Colecao box1 = new Colecao(colecao, 12, 90.0,"Esse é um box.");
 
 
     }
