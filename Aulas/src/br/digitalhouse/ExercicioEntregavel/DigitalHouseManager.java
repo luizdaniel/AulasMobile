@@ -157,9 +157,15 @@ public class DigitalHouseManager {
         System.out.println("Profesor Adjunto adicionado: " + nome);
     }
 
-    public List<Curso> consultarCursos(Aluno aluno){
-
-        return null;
+    public void consultarCursosDoAluno(Integer codigoAluno){
+        for (int i = 0; i < cursos.size(); i++) {
+            List<Aluno> alunos_do_curso = cursos.get(i).getAlunos();
+            for (Aluno aluno_doCurso : alunos_do_curso) {
+                if (aluno_doCurso.getCodigo() == codigoAluno){
+                    System.out.println("O aluno " + aluno_doCurso.getNome() + " tá matriculado no curso: " + cursos.get(i).getNome());
+                }
+            }
+        }
     }
 
 }

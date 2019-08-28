@@ -27,5 +27,6 @@ public class Principal {
         escola.matricularAluno(4, 2002);
         escola.matricularAluno(5, 2002);
 
+        escola.consultarCursosDoAluno(2);
     }
 }
